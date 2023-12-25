@@ -54,4 +54,4 @@ def first_chat():
 
 if __name__ == '__main__':
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    app.run(host='0.0.0.0', port=3001, debug=True, ssl_context=('cert.pem', 'key.pem'))
+    app.run(host='0.0.0.0', port=3001, debug=True, ssl_context=('ssl/cert.pem', 'ssl/privkey.pem'))
